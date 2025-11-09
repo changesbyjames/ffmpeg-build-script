@@ -14,7 +14,9 @@ LDFLAGS="-L$WORKSPACE/lib"
 LDEXEFLAGS=""
 EXTRALIBS="-ldl -lpthread -lm -lz"
 MACOS_SILICON=false
-CONFIGURE_OPTIONS=()
+CONFIGURE_OPTIONS=(
+  "--enable-muxer=whip"
+)
 NONFREE_AND_GPL=false
 DISABLE_LV2=false
 LATEST=false
